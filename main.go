@@ -1,4 +1,13 @@
 package main
 
+import (
+	"log"
+
+	"github.com/berkaycubuk/bmp/cmd"
+)
+
 func main() {
+	if err := cmd.Execute(); err != nil {
+		log.Fatal(err)
+	}
 }
